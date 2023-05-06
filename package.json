@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "author": "chenboxuan <478542997@qq.com>",
+  "scripts": {
+    "build": "cross-env UMI_ENV=develop max build",
+    "build:pre": "cross-env UMI_ENV=prerelease max build",
+    "build:prod": "cross-env UMI_ENV=produce max build",
+    "format": "prettier --cache --write .",
+    "postinstall": "max setup",
+    "prepare": "husky install",
+    "setup": "max setup",
+    "start": "cross-env UMI_ENV=develop max dev",
+    "start:pre": "cross-env UMI_ENV=prerelease max dev",
+    "start:prod": "cross-env UMI_ENV=produce max dev"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.0.1",
+    "@ant-design/pro-components": "^2.4.12",
+    "@umijs/max": "^4.0.67",
+    "antd": "^5.4.6"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.5",
+    "@types/react-dom": "^18.2.3",
+    "cross-env": "^7.0.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "prettier-plugin-packagejson": "^2.4.3",
+    "tailwindcss": "^3",
+    "typescript": "^5.0.4"
+  }
+}
